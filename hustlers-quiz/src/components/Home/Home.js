@@ -1,12 +1,11 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
-import EachSubject from '../eachSubject/EachSubject'
+import EachSubject from '../EachSubject/EachSubject'
 import Header from '../Header/Header';
 
 const Home = () => {
     const subjectsData = useLoaderData();
     const subjects = subjectsData.data;
-    console.log(subjects);
     return (
         <div>
             <Header></Header>

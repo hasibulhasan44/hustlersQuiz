@@ -22,10 +22,10 @@ const Statistics = () => {
         })
     },[])
     return (
-        <div className='mt-8 w-1/2'>
+        <div className='mt-8'>
             <div className='linechart-container'>
                 <ResponsiveContainer width={"99%"} height={300}>
-                    <LineChart width={850} height={240} data={stats}>
+                    <LineChart width={500} height={300} data={stats}>
                         <Line dataKey="Total" fill="#8884d8" />
                         <CartesianGrid strokeDasharray="3 3" />
                         <XAxis dataKey="Name" />
