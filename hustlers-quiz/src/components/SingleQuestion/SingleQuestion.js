@@ -10,16 +10,16 @@ const SingleQuestion = (props) => {
   const mainQuestion = removePTag.replace('</p>', '')
 
   const correctAnswerInEyeIcon = () => {
-    alert(`${correctAnswer}`)
+    return toast.success(`${correctAnswer}`)
   }
 
   const compareCorrectAnswer = (clickedOption) =>{
     console.log(clickedOption);
     if (clickedOption === correctAnswer) {
-      alert('CORRECT')
+      return toast.success('YAY! You have nailed it!')
     }
     else{
-     alert('wrong')
+     return toast.warning('Better luck next time')
     }
   }
   return (
@@ -35,6 +35,7 @@ const SingleQuestion = (props) => {
                   handlerForCompare = {compareCorrectAnswer}
                   ></Options>
                 )}
+                
             </div>
         </div>
     </div>
