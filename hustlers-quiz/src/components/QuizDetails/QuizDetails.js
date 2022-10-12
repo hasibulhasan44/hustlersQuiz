@@ -9,8 +9,8 @@ const QuizDetails = () => {
   // console.log(quizquestions);
   return (
     <div>
-      {quizquestions.map((question) => (
-        <SingleQuestion key={question.id} question={question}></SingleQuestion>
+      {quizquestions.map((questions) => (
+        <SingleQuestion key={questions.id} question={questions}></SingleQuestion>
       ))}
     </div>
   );

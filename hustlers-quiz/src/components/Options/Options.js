@@ -1,12 +1,12 @@
 import React from 'react';
 
-const Options = ({option}) => {
-    console.log(option);
+const Options = ({option , handlerForCompare}) => {
     return (
         <div>
             <label>
-                <button className='border-4 border-gray-400 p-2 rounded-xl hover:bg-indigo-400'>{option}</button>
+                <button onClick={(clickedOption) => handlerForCompare(option)} className='border-4 border-gray-400 p-2 rounded-xl hover:bg-indigo-400'>{option}</button>
             </label>
+            
         </div>
     );
 };
