@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Navbar.css'
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { Bars3Icon , XMarkIcon } from '@heroicons/react/24/solid'
 
 
@@ -13,9 +13,9 @@ const Navbar = () => {
             </div>
             <div className='relative'>
                 <div className={`lg:flex lg:flex-row lg:static md:flex md:flex-col flex flex-col absolute duration-500 ease-in  ${open ? 'top-[-45px]' : 'top-[-150px]'}`}>
-                    <Link className='mr-5' to='/'>Home</Link>
-                    <Link className='mr-5' to = 'statistics'>Statistics</Link>
-                    <Link to = 'blogs'>Blogs</Link>
+                    <NavLink id='home' className={({isActive}) => isActive ? 'active' : undefined} to='home'>Home</NavLink>
+                    <NavLink id='statistics' className={({isActive}) => isActive ? 'active' : undefined} to = 'statistics'>Statistics</NavLink>
+                    <NavLink className={({isActive}) => isActive ? 'active' : undefined} to = 'blogs'>Blogs</NavLink>
                 </div>
             </div>
                 {
