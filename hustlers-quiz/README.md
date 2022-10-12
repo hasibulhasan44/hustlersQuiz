@@ -3,7 +3,7 @@
 ## Here is the live link of my project below.
 
 ---
-
+https://hustlersquiz.netlify.app/home
 
 ---
 
