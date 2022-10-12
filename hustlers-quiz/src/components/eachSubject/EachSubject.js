@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 
 const EachSubject = ({EachSubject}) => {
     const {id, logo, name, total} = EachSubject;
-    console.log(id);
 return (
     <div>
         <div>
@@ -13,7 +12,7 @@ return (
                 <p className='text-white p-2'>Name: {name}</p>
                 <p className='text-white p-2'>Questions: {total}</p>
                 <div className='text-center'>
-                <Link className='border-2 border-double block mt-2 text-black text-xl mx-auto bg-indigo-300 flex items-center p-1 rounded-lg mb-4'>Jump to Quiz<ArrowRightIcon className='h-6 w-6 ml-2'></ArrowRightIcon></Link>
+                <Link to={`/${name}/${id}>`} className='border-2 border-double block mt-2 text-black text-xl mx-auto bg-indigo-300 flex items-center p-1 rounded-lg mb-4'>Jump to Quiz<ArrowRightIcon className='h-6 w-6 ml-2'></ArrowRightIcon></Link>
                 </div>
 
             </div>

@@ -9,6 +9,7 @@ import Main from './Layout/Main';
 import Home from './components/Home/Home';
 import Statistics from './components/Statistics/Statistics';
 import Blogs from './components/Blogs/Blogs';
+import Routemessage404 from './components/Routemessage404/Routemessage404';
 
 function App() {
   const router = createBrowserRouter([
@@ -30,6 +31,10 @@ function App() {
           element:<Blogs></Blogs>
         },
       ]
+    },
+    {
+      path: '*' ,
+      element: <Routemessage404></Routemessage404>
     }
   ])
   return (
