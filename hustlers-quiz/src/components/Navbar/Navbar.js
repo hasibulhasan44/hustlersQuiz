@@ -20,6 +20,7 @@ const Navbar = () => {
 
                     <NavLink className={({isActive}) => isActive ? 'active' : undefined} to = 'blogs'>Blogs</NavLink>
                 </div>
+                {/* simple commit */}
             </div>
                 {
                     open ? <XMarkIcon onClick={() => setopen(!open)} className='h-6 w-6 lg:hidden'/> : <Bars3Icon onClick={() => setopen(!open)} className='h-6 w-6 lg:hidden'/>
